@@ -1,0 +1,11 @@
+{
+  "name": "oauth2mock",
+  "version": "1.0.0",
+  "description": "Very simple mock for oauth2 responses",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js"
+  },
+  "author": "0x002a@gmail.com",
+  "license": "MIT"
+}

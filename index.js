@@ -17,6 +17,12 @@ const server = http.createServer((req, res) => {
             'authorities': [{'authority': 'SUPERUSER'}],
             'authenticated': true
         }));
+    } else if (auth.startsWith('Bearer 1')) {
+        console.log('SUPERUSER');
+        res.write(JSON.stringify({
+            'authorities': [{'authority': 'LEGALADMIN'}],
+            'authenticated': true
+        }));
     } else {
         console.log('USER');
         res.write(JSON.stringify({
